@@ -152,18 +152,20 @@ endmodule
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### RTL FOR SR
-![IMAGE](flipflop_rtl.png)
+![flipflop_rtl](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/d4b7c83e-3abd-4259-a1b1-dc11bde1a0fe)
 
 ### RTL FOR JK
-![image](image.png)
+![rtl_jk](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/9c35ba4a-e0e3-455d-a42e-dcde154c003d)
+
 ## TIMING DIGRAMS FOR FLIP FLOPS 
 
 ### WAVEFPRM FOR SR
 
-![IMAGE](flipflop_wf.png)
+![flipflop_wf](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/262d4682-4640-4972-abbb-4c8de1670e40)
+
 
 ### WAVEFPRM FOR JK
-![IMAGE](wf_jk.png)
+![wf_jk](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/d2c4cf6e-c31c-4208-9709-a3e717ea62dc)
 
 
 
