@@ -167,6 +167,10 @@ endmodule
 ### WAVEFPRM FOR JK
 ![wf_jk](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/d2c4cf6e-c31c-4208-9709-a3e717ea62dc)
 
+### WAVEFPRM FOR JK_toggle
+![image](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/31117449-e79b-458e-bbde-4288a64b17f7)
+
+
 
 
 ### RESULTS 
