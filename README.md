@@ -119,6 +119,7 @@ RegisterNumber:  212222240013
 
 */
 
+### CODE FOR SR
 ```
 module proj5flipflop(s,r,q,qbar,clk);
 input s,r,clk;
@@ -133,18 +134,37 @@ end
 endmodule
 
 ```
+### CODE FOR JK
+```
+module proj5flipflopJK(J,K,q,qbar,clk);
+input J,K,clk;
+output reg q,qbar;
+initial q = 0;
+initial qbar = 1;
+always @(posedge clk)
+begin  
+q = (J&(~q))|((~K)&q);
+qbar = ((~J)&(qbar))|K&(~qbar);
+end 
+endmodule
+```
 
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### RTL FOR SR
 ![IMAGE](flipflop_rtl.png)
 
-
+### RTL FOR JK
+![image](image.png)
 ## TIMING DIGRAMS FOR FLIP FLOPS 
 
 ### WAVEFPRM FOR SR
 
 ![IMAGE](flipflop_wf.png)
+
+### WAVEFPRM FOR JK
+![IMAGE](wf_jk.png)
+
 
 
 ### RESULTS 
