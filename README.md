@@ -149,6 +149,20 @@ end
 endmodule
 ```
 
+### CODE FOR D
+```
+module proj5Dflipflop(D,clock,Q,Qbar);
+input D,clock;
+output Q,Qbar;
+assign Dbar = ~D;
+wire X,Y;
+nand(X,D,clock);
+nand(Y,Dbar,clock);
+nand(Q,X,Qbar);
+nand(Qbar,Y,Q);
+endmodule
+```
+
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### RTL FOR SR
@@ -156,6 +170,11 @@ endmodule
 
 ### RTL FOR JK
 ![rtl_jk](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/9c35ba4a-e0e3-455d-a42e-dcde154c003d)
+
+### RTL FOR D
+![drtl](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/f6c81c26-c5f3-4d4d-9f22-6cd3dce28275)
+
+
 
 ## TIMING DIGRAMS FOR FLIP FLOPS 
 
@@ -169,6 +188,9 @@ endmodule
 
 ### WAVEFPRM FOR JK_toggle
 ![image](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/31117449-e79b-458e-bbde-4288a64b17f7)
+
+### WAVEFPRM FOR D
+![dwf](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/579219c2-e5da-4f1e-92f2-344d3e8a9f10)
 
 
 
