@@ -163,6 +163,19 @@ nand(Qbar,Y,Q);
 endmodule
 ```
 
+### CODE FOR T
+```
+module proj5Tflipflop(T,clock,Q,Qbar);
+input T,clock;
+output Q,Qbar;
+wire A,B;
+nand(A,T,clock,Qbar);
+nand(B,T,clock,Q);
+nand(Q,A,Qbar);
+nand(Qbar,B,Q);
+endmodule
+```
+
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### RTL FOR SR
@@ -173,6 +186,9 @@ endmodule
 
 ### RTL FOR D
 ![drtl](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/f6c81c26-c5f3-4d4d-9f22-6cd3dce28275)
+
+### RTL FOR T
+![tRTL](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/80b4a888-0811-48a7-8037-d31d35ccf604)
 
 
 
@@ -192,7 +208,11 @@ endmodule
 ### WAVEFPRM FOR D
 ![dwf](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/579219c2-e5da-4f1e-92f2-344d3e8a9f10)
 
+### WAVEFPRM FOR T
+![TWF](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/7e17cb6a-d9d4-44c8-b024-8c035d7956c7)
 
 
 
 ### RESULTS 
+Implementation-of-flipflops-using-verilog successfully completed.
+
