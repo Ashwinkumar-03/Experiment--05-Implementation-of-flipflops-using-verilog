@@ -151,15 +151,17 @@ endmodule
 
 ### CODE FOR D
 ```
-module proj5Dflipflop(D,clock,Q,Qbar);
-input D,clock;
-output Q,Qbar;
-assign Dbar = ~D;
-wire X,Y;
-nand(X,D,clock);
-nand(Y,Dbar,clock);
-nand(Q,X,Qbar);
-nand(Qbar,Y,Q);
+module proj5Dff(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
 endmodule
 ```
 
@@ -188,7 +190,7 @@ endmodule
 ![rtl_jk](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/9c35ba4a-e0e3-455d-a42e-dcde154c003d)
 
 ### RTL FOR D
-![drtl](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/f6c81c26-c5f3-4d4d-9f22-6cd3dce28275)
+![rtl ](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/0b58768d-4be9-4f70-9d7a-fef0243ef5f8)
 
 ### RTL FOR T
 ![tRTL](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/06c3509c-785e-43c5-9076-e31affdd1bd4)
@@ -210,7 +212,7 @@ endmodule
 ![image](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/31117449-e79b-458e-bbde-4288a64b17f7)
 
 ### WAVEFPRM FOR D
-![dwf](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/579219c2-e5da-4f1e-92f2-344d3e8a9f10)
+![wf](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/6d516445-38e0-43e8-abeb-1b27ca9ff4e8)
 
 ### WAVEFPRM FOR T
 ![TWF](https://github.com/Ashwinkumar-03/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118663725/20ce2ca5-9b82-41ff-8cf5-ca4c56b06764)
